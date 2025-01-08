@@ -3,6 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import FeaturesSection from "../components/Features";
+import TitleComponent from "../components/Title";
+import ProductGrid from "../components/product-grid";
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false);
@@ -73,6 +77,15 @@ export default function HeroSection() {
         </div>
         <FloatingElements />
       </section>
+      <section className="bg-gradient-to-b from-purple-100 to-white py-5">
+        <TitleComponent title="Our Amazing Features" />
+        <FeaturesSection />
+      </section>
+      <section className="bg-gradient-to-b from-purple-100 to-white py-5">
+      <TitleComponent title="Featured Products" />
+        <ProductGrid />
+      </section>
+      <Footer />
     </>
   );
 }
