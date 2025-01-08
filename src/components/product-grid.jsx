@@ -66,7 +66,7 @@ export default function ProductGrid() {
       <ScrollArea className="w-full whitespace-nowrap rounded-lg">
         <div className="flex gap-10 w-max space-x-6 p-4 py-10">
           {products.map((product) => (
-            <div key={product.id} className="w-[300px] shrink-0">
+            <div key={product.id} className="w-[400px] shrink-0">
               <ProductCard product={product} />
             </div>
           ))}

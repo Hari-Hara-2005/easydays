@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 const ProductCard = ({ product }) => {
   return (
     <div className="flex h-full flex-col p-6 bg-white rounded-lg border border-gray-200 shadow-lg transition-transform transform hover:scale-105">
-      <div className="relative aspect-[4/3] mb-6">
+      <div className="relative aspect-[5/3] mb-6">
         <img
           src={product.imageUrl}
           alt={product.title}
