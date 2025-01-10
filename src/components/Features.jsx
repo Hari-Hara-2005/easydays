@@ -10,7 +10,7 @@ export default function FeaturesSection() {
       delay: 0,
     },
     {
-      image: "Gif/protection.gif ", 
+      image: "Gif/protection.gif ",
       title: "Superior Protection",
       description:
         "Enabling women to feel comfortable during periods – both physical and emotional, so that they can focus on what matters to them.",
@@ -28,7 +28,7 @@ export default function FeaturesSection() {
   return (
     <section className="lg:h-[70vh] flex items-center">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
           {features.map((feature, index) => (
             <motion.div
               key={index}

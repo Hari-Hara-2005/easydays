@@ -27,7 +27,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -53,7 +53,7 @@
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
   }
 }
 @layer base {
@@ -65,4 +65,88 @@
   }
 }
 
+/* Style for the next and previous buttons */
+/* Base button styles */
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute !important;
+  top: 50% !important;
+  z-index: 10 !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  color: white !important;
+  margin-top: 5px !important;
+  border-radius: 50% !important;
+  padding: 10px !important;
+  transition: background-color 0.3s ease !important;
+  transform: translateY(-50%) !important;
+  cursor: pointer !important;
+}
 
+/* Right button */
+.swiper-button-next {
+  right: 10px !important;
+}
+
+/* Left button */
+.swiper-button-prev {
+  left: 10px !important;
+}
+@media (max-width: 1024px) {
+  .swiper-button-prev {
+    left: 1px !important;
+  }
+  .swiper-button-next {
+    right: 1px !important;
+  }
+  
+}
+
+/* Hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Optional: Change button size */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+/* Add arrow styles */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px !important;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  /* On medium screens, reduce button size */
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* On smaller screens, reduce button size further */
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* On very small screens, even smaller buttons */
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 25px !important;
+    height: 25px !important;
+    font-size: 12px !important;
+  }
+}

@@ -64,14 +64,14 @@ export default function ProductGrid() {
   return (
     <div className="container mx-auto px-4 py-8">
       <ScrollArea className="w-full whitespace-nowrap rounded-lg">
-        <div className="flex gap-10 w-max space-x-6 p-4 py-10">
+        <div className="flex lg:gap-10 w-max space-x-6 p-4 py-10">
           {products.map((product) => (
-            <div key={product.id} className="w-[400px] shrink-0">
-              <ProductCard product={product} />
-            </div>
+            <div key={product.id} className="lg:w-[400px] w-[300px] md:w-[350px] shrink-0">
+            <ProductCard product={product} />
+          </div>          
           ))}
         </div>
-        <ScrollBar  orientation="horizontal" />
+        <ScrollBar orientation="horizontal" />
       </ScrollArea>
     </div>
   );

@@ -7,6 +7,9 @@ import Footer from "../components/Footer";
 import FeaturesSection from "../components/Features";
 import TitleComponent from "../components/Title";
 import ProductGrid from "../components/product-grid";
+import Article from "../components/article-card";
+import Faq from "../components/FAQ";
+import TestimonialCarousel from "../components/CustomerReview";
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false);
@@ -82,8 +85,20 @@ export default function HeroSection() {
         <FeaturesSection />
       </section>
       <section className="bg-gradient-to-b from-purple-100 to-white py-5">
-      <TitleComponent title="Featured Products" />
+        <TitleComponent title="Featured Products" />
         <ProductGrid />
+      </section>
+      <section className="bg-gradient-to-b from-purple-100 to-white py-5">
+        <TitleComponent title="Period Basics: Know More" />
+        <Article />
+      </section>
+      <section className="bg-gradient-to-b from-purple-100 to-white py-5 ">
+        <TitleComponent title="Read our customers say" />
+        <TestimonialCarousel />
+      </section>
+      <section className="bg-gradient-to-b from-purple-100 to-white py-5 ">
+        <TitleComponent title="Frequently Asked Questions" />
+        <Faq />
       </section>
       <Footer />
     </>
