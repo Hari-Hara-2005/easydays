@@ -17,7 +17,7 @@ i18n
           navbar: {
             home: 'Home',
             about: 'About',
-            services: 'Services',
+            brandbook: 'Brandbook',
             contact: 'Contact',
             login: 'Login',
             forGirlsAndParents: 'For Girls & Parents',
@@ -50,9 +50,14 @@ i18n
             contact: 'Reach out for help, partnership, or enquiries',
             hiringBadge: 'We\'re hiring!',
           },
+          section: {
+            title: 'Experience Luxury Comfort',
+            description: 'Indulge in the epitome of softness and absorbency with our premium pads.',
+            button: 'Shop Now',
+          },
         },
       },
-      Tn: {
+      தமிழ்: {
         translation: {
           navbar: {
             home: 'முகப்பு',
@@ -89,6 +94,11 @@ i18n
             careers: 'பேனில் வேலை செய்யக்கூடியதாக என்னவென்று தெரிந்து கொள்ளுங்கள்',
             contact: 'உதவி அல்லது தொடர்புக்கு எங்களை அணுகவும்',
             hiringBadge: 'நாங்கள் வேலைவாய்ப்பு வழங்குகிறோம்!',
+          },
+          section: {
+            title: 'வாய்ப்பு சிரமம் இல்லாமல் அனுபவிக்கவும்',
+            description: 'எங்கள் உயர்தர பட்ஸ் மூலம் மென்மையும் உறிஞ்சும் திறனும் உங்களுக்கு அனுபவிக்கக்கூடியதாக மாற்றுகிறது.',
+            button: 'இப்போது வாங்க',
           },
         },
       },
@@ -129,6 +139,11 @@ i18n
             careers: 'बेन में काम करना कैसा है, जानें और हमारी खुली भूमिकाएँ देखें',
             contact: 'सहायता, साझेदारी, या सामान्य पूछताछ के लिए संपर्क करें',
             hiringBadge: 'हमHiring कर रहे हैं!',
+          },
+          section: {
+            title: 'विलासिता का अनुभव करें आराम',
+            description: 'हमारे प्रीमियम पैड्स के साथ कोमलता और अवशोषण के सर्वोत्तम अनुभव में लिप्त हो जाइए।',
+            button: 'अभी खरीदें',
           },
         },
       },

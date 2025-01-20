@@ -28,7 +28,7 @@ export default function HeroSection() {
       <section className="relative min-h-screen   overflow-hidden bg-[#090014]">
         <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
         <Navbar />
-        <div className="flex items-center min-h-screen ">
+        <div className="flex items-center min-h-screen">
           <motion.div
             className="container mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:px-8"
             initial={{ opacity: 0 }}
@@ -43,8 +43,7 @@ export default function HeroSection() {
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.2, duration: 0.5 }}
                 >
-                  Experience Luxury{" "}
-                  <span className="text-[#7D328D]">Comfort</span>
+                  {t("section.title")}
                 </motion.h1>
                 <motion.p
                   className="mt-4 text-xl text-gray-500"
@@ -52,8 +51,7 @@ export default function HeroSection() {
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.4, duration: 0.5 }}
                 >
-                  Indulge in the epitome of softness and absorbency with our
-                  premium pads.
+                  {t("section.description")}
                 </motion.p>
                 <motion.div
                   className="mt-8"
@@ -62,12 +60,12 @@ export default function HeroSection() {
                   transition={{ delay: 0.6, duration: 0.5 }}
                 >
                   <Button className="bg-[#7D328D] hover:bg-[#9D52AD] text-white font-bold py-3 px-6 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105">
-                    Shop Now
+                    {t("section.button")}
                   </Button>
                 </motion.div>
               </div>
 
-              <motion.div className="relative lg:mt-0" style={{ y }}>
+              <motion.div className="relative lg:mt-0">
                 <div
                   className="absolute top-[-4.5%] left-0 w-full h-[30px] bg-cover bg-no-repeat"
                   style={{
@@ -78,13 +76,13 @@ export default function HeroSection() {
                 {/* Card with animated border */}
                 <div className="relative overflow-hidden">
                   <div className="relative p-[3px] rounded-2xl animate-border">
-                    <Card className="overflow-hidden rounded-2xl">
+                    <div className="overflow-hidden rounded-2xl">
                       <img
                         src="Img/product_img.jpg"
                         alt="Luxury pad product"
                         className="w-full h-auto object-cover"
                       />
-                    </Card>
+                    </div>
                   </div>
                   <img
                     src="Img/Circle.png"

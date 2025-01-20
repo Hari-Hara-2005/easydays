@@ -29,7 +29,7 @@ import { useTranslation } from "react-i18next";
 
 const lngs = {
   en: { nativeName: "English" },
-  Tn: { nativeName: "Tamil" },
+  தமிழ்: { nativeName: "தமிழ்" },
   Hn: { nativeName: "Hindi" },
 };
 
@@ -46,7 +46,7 @@ const Navbar = () => {
       href: "/about",
     },
     {
-      title: "Brandbook",
+      title: t("navbar.brandbook"),
       description: "Learn more about Ben's brand",
       icon: BookOpen,
       href: "/brand",
@@ -60,7 +60,7 @@ const Navbar = () => {
       badge: "We're hiring!",
     },
     {
-      title: "Contact",
+      title: t("navbar.contact"),
       description:
         "Reach out if you need help, are interested in partnership, or just have a general enquiry",
       icon: MessageSquare,
@@ -115,7 +115,7 @@ const Navbar = () => {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="bg-transparent text-white hover:text-white hover:bg-transparent text-[17px]">
-                  For Girls & Parents
+                  {t("navbar.forGirlsAndParents")}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4">
@@ -126,9 +126,11 @@ const Navbar = () => {
                       >
                         <Droplet className="h-6 w-6 text-pink-600" />
                         <div>
-                          <span className="font-medium">My First Period</span>
+                          <span className="font-medium">
+                            {t("menu.firstPeriod.title")}
+                          </span>
                           <p className="text-sm text-muted-foreground">
-                            Understand what to expect during your first period.
+                            {t("menu.firstPeriod.description")}
                           </p>
                         </div>
                       </Link>
@@ -141,9 +143,11 @@ const Navbar = () => {
                       >
                         <Book className="h-6 w-6 text-blue-500" />
                         <div>
-                          <span className="font-medium">Period Guide</span>
+                          <span className="font-medium">
+                            {t("menu.periodGuide.title")}
+                          </span>
                           <p className="text-sm text-muted-foreground">
-                            A complete guide to menstrual health and care.
+                            {t("menu.periodGuide.description")}
                           </p>
                         </div>
                       </Link>
@@ -156,9 +160,11 @@ const Navbar = () => {
                       >
                         <HeartPulse className="h-6 w-6 text-purple-500" />
                         <div>
-                          <span className="font-medium">Puberty</span>
+                          <span className="font-medium">
+                            {t("menu.puberty.title")}
+                          </span>
                           <p className="text-sm text-muted-foreground">
-                            Learn about the changes your body goes through.
+                            {t("menu.puberty.description")}
                           </p>
                         </div>
                       </Link>
@@ -171,9 +177,11 @@ const Navbar = () => {
                       >
                         <Users className="h-6 w-6 text-green-500" />
                         <div>
-                          <span className="font-medium">Tips for Parents</span>
+                          <span className="font-medium">
+                            {t("menu.parentTips.title")}
+                          </span>
                           <p className="text-sm text-muted-foreground">
-                            Helpful tips for parents to support their children.
+                            {t("menu.parentTips.description")}
                           </p>
                         </div>
                       </Link>
@@ -184,13 +192,13 @@ const Navbar = () => {
               <NavigationMenuItem>
                 <Link to="/how-it-works">
                   <NavigationMenuLink className="bg-transparent text-white hover:text-white">
-                    Keep Girls in School
+                    {t("navbar.keepGirlsInSchool")}
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="bg-transparent text-white hover:text-white hover:bg-transparent text-[17px]">
-                  Company
+                  {t("navbar.company")}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[600px] gap-3 p-4">
@@ -212,7 +220,7 @@ const Navbar = () => {
                         to="/careers"
                         className="text-sm text-purple-600 hover:text-purple-700"
                       >
-                        Looking for a new career? Get in touch
+                        {t("companyItems.careers")}
                       </Link>
                     </li>
                   </ul>
@@ -221,7 +229,7 @@ const Navbar = () => {
               <NavigationMenuItem>
                 <Link to="/PeriodTracker">
                   <NavigationMenuLink className="bg-transparent text-white hover:text-white">
-                    Period Calculator
+                    {t("navbar.periodCalculator")}
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
@@ -255,7 +263,7 @@ const Navbar = () => {
             </PopoverContent>
           </Popover>
           <Button className="bg-[#7D328D] text-white hover:bg-[#7D328D]/90">
-            Login
+            {t("navbar.login")}
           </Button>
         </div>
       </div>
